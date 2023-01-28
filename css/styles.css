@@ -1,0 +1,14 @@
+/*Setting the root shortcuts*/
+
+:root{
+    /*Primary*/
+    --mainbackground:#090b1a;
+    --cardbackground:#1b1938;
+    --accent:#aa5cdb;
+
+    /*Neutral*/
+    --white:#ffffff; /*main heading and stats*/
+    --transparentwhite:#ffffffbf; /*main paragraph*/
+    --lesstranswhite: #ffffff99; /*stat headings*/
+}
+
