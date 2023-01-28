@@ -19,7 +19,7 @@ body{
 }
 
 .card-container{
-    width: 290px;
+    width: 300px;
     display: grid;
     grid-template-rows: 2;
     background-color: var(--cardbackground);
@@ -39,14 +39,14 @@ body{
     background-size:cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    width: 290px;
+    width: 300px;
     height: 230px;
 }
 .image{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     position: absolute;
-    width: 290px;
+    width: 300px;
     height: 230px;
     /*It's important to use rgba to overlay*/
     background:rgba(83, 0, 138, 0.5);
@@ -101,4 +101,60 @@ body{
     color: var(--lesstranswhite);
     font-size: 10px;
     letter-spacing: 1.5px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .image-container{
+        width: 900px;
+        min-height: 40vh;
+        margin-top: 0;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        background-size: contain;
+        margin: auto;
+    }
+    .image{
+        width: 410px;
+        height: 40vh;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .info-content{
+        text-align: left;
+        padding: 0px 40px 0px 40px;
+        margin:auto;
+    }
+
+    .card-container{
+        width: 860px;
+        min-height: 100px;
+        margin-top: 200px;
+        display: flex;
+        flex-direction: row-reverse;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .title h1{
+        margin: auto;
+    }
+
+    .paragraph{
+        margin-bottom: 20px;
+        position: relative;
+        right: 10px;
+    }
+
+
+    .stats{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+        right: 10px;
+    }
 }
